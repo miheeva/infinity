@@ -1,0 +1,14 @@
+@import "bootstrap.min.css";
+@import "vars";
+@import "header";
+@import "slider";
+@import "about";
+@import "tracks";
+@import "news";
+@import "contacts";
+@import "footer";
+
+body {
+  font-size: 100%;
+  background-color: $white;
+}

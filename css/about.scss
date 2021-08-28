@@ -1,0 +1,23 @@
+.about {
+  background-color: $blue;
+  color: $white;
+  position: relative;
+  padding-bottom: 95px;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/box-2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    top: -406px;
+    right: 0;
+    z-index: 0;
+  }
+  .about__text {
+    letter-spacing: 2px;
+    line-height: 1.4;
+  }
+}
