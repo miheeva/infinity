@@ -1,0 +1,44 @@
+.sidebar {
+  padding: 0 15px;
+  .form-group {
+    width: 100%;
+    &+button {
+      display: none;
+    }
+  }
+  .form-group {
+    &+button {
+      display: none;
+    }
+  }
+  .widget, .widget_search, .search, .widgets, .form-group {
+    input {
+      width: 100%;
+      color: $black;
+      font-size: 0.825rem;
+      font-family: "Roboto Light";
+      padding: 10px;
+      @include mozPlaceholder($black, 0.825rem, 'Roboto Thin');
+      @include webkitPlaceholder($black, 0.825rem, 'Roboto Thin');
+      transition: all .3s;
+      border: 1px solid #dcdcdc;
+      @include shadowBlock();
+      border-radius: 0 !important;
+      &:focus {
+        padding: 12px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .banners {
+    .banner {
+      margin: 10px 0;
+      a {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

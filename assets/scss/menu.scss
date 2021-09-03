@@ -1,0 +1,61 @@
+.mainMenu {
+  width: 100%;
+  min-height: 100%;
+  background-color: $mainBlue;
+  display: none;
+  z-index: 100;
+  opacity: 0;
+  transition: all .3s;
+  position: absolute;
+  top: 100px;
+  &.openMenu {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+.menuList {
+  list-style: none;
+  min-width: 200px;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &.leftMenu {
+    flex-direction: column;
+  }
+  li {
+    line-height: 1.2;
+    padding: 4px 0;
+    font-family: "Roboto Regular";
+    text-transform: uppercase;
+    &.firstMenuItem {
+      display: inline-block;
+    }
+    * {
+      color: $white;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .sub-menu {
+      padding-left: 0;
+      list-style: none;
+      li {
+        font-size: 0.825rem;
+        font-family: "Roboto Thin";
+        text-transform: none;
+      }
+      a {
+        &:hover {
+          color: $white;
+
+        }
+      }
+    }
+  }
+
+  * {
+    color: $white;
+  }
+}
