@@ -16,8 +16,10 @@ footer {
     //box-shadow: 13px 11px 0 0 $blue; // Сейчас картинка, на неё не вешается тень нормально
   }
   .navbar {
+    padding-top: 0;
     .main-menu {
       .navbar-brand {
+        padding-top: 0;
         .img-npo {
           width: 100px;
           height: auto;

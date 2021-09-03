@@ -4,7 +4,24 @@
   }
   .carousel {
     .carousel-indicators {
-
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-right: 15%;
+      margin-bottom: 1rem;
+      margin-left: 15%;
+      list-style: none;
+      button {
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        border: 3px solid $blue;
+      }
     }
     .carousel-inner {
       .carousel-item {

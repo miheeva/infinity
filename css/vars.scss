@@ -29,6 +29,10 @@ $yellow: #FDD086;
   align-items: center;
   margin-top: 170px;
   margin-bottom: 170px;
+  @media screen and (max-width: 768px) {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
   display: grid;
   grid-gap: 20px;
   position: relative;

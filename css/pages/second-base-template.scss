@@ -1,0 +1,189 @@
+.main-second {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  .acide {
+    .link-return {
+      margin-top: 90px;
+      background-color: $blue;
+      color: $white;
+      padding: 10px 20px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 1.1rem;
+      letter-spacing: 1.5px;
+      text-transform: lowercase;
+      text-decoration: none;
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+      align-items: end;
+      .icon {
+        width: 32px;
+        height: 22px;
+        display: flex;
+        align-items: end;
+        background-size: contain;
+
+        &.arrow {
+          background-image: url("../../img/icons/arrow-link.svg");
+        }
+      }
+    }
+  }
+
+  .main {
+    background-color: #fff;
+    padding: 70px 100px;
+    position: relative;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: -100%;
+      background-color: #fff;
+      top: 0;
+    }
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      margin-bottom: 70px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin-bottom: 60px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      margin-bottom: 35px;
+      font-weight: bold;
+
+    }
+    h4 {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    h5 {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+      font-weight: bold;
+
+    }
+
+    h6 {
+      font-size: 1rem;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-weight: bold;
+
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      padding-bottom: 20px;
+    }
+    .course-info-list-header {
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: lowercase;
+      font-size: 1.3rem;
+      margin-bottom: 0;
+    }
+    .course-info-list {
+      list-style: none;
+      padding-left: 0;
+      .course-info-list__item {
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+        align-items: center;
+        .course-info-list__icon {
+          width: 30px;
+          height: 30px;
+          background-size: contain;
+          display: block;
+          background-repeat: no-repeat;
+          &.age {
+            background-image: url("../../img/icons/age.svg");
+          }
+          &.time {
+            background-image: url("../../img/icons/time.svg");
+          }
+          &.date {
+            background-image: url("../../img/icons/calendar.svg");
+          }
+
+        }
+        .course-info-list__text {
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 500;
+          font-size: 1.4rem;
+          letter-spacing: 1px;
+        }
+      }
+      &.skills {
+        display: block;
+        list-style: disc;
+        padding-left: 1.4rem;
+        .course-info-list__item {
+          display: list-item;
+          margin-bottom: -2px;
+          .course-info-list__text {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            font-weight: 300;
+          }
+        }
+
+      }
+    }
+    .course-link {
+      color: $blue;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: lowercase;
+      font-size: 1.8rem;
+      text-decoration: none;
+      margin: 30px 0;
+      transition: all .4s;
+      &:hover {
+        color: $red;
+      }
+    }
+    .teacher {
+      border: none;
+      .card-img-top {
+        border-radius: 100%;
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+      }
+      .card-body {
+        padding: 20px 0;
+        .card-title {
+          font-weight: 400;
+          font-size: 1.4rem;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+        }
+        .card-text {
+          color: #9EA7AF;
+          font-size: 0.8rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
