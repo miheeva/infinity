@@ -6,21 +6,6 @@ Author: Mikheeva Anna
 Author URI: http://miheeva-spb.ru
 */
 
-body {
-    animation-duration: 10s;
-    animation-name: rotatee;
-    animation-iteration-count: infinite;
-}
-
-@keyframes rotatee {
-    0% {
-        transform: rotate(-359deg) scale(2);
-    }
-    100% {
-        transform: rotate(359deg) scale(-3);
-    }
-}
-
 @import "bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
